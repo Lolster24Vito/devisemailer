@@ -28,6 +28,13 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
+
+#Uncommenting this will break the application vito
+#@import "bootstrap-sprockets";
+#@import "bootstrap";
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
