@@ -96,6 +96,8 @@ GEM
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.5)
+    font-awesome-sass (6.1.1)
+      sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -118,6 +120,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.5.1)
     net-imap (0.2.3)
@@ -135,7 +138,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.4-x86_64-linux)
+    nokogiri (1.13.4)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     public_suffix (4.0.7)
     puma (5.6.4)
@@ -231,6 +235,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.6)
   capybara
   debug
+  font-awesome-sass (~> 6.1.1)
   importmap-rails
   jbuilder
   puma (~> 5.0)
