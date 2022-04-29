@@ -86,7 +86,7 @@ group :development do
   gem "web-console"
   gem "spring"
 
-  #gem "sqlite3"
+  gem "sqlite3"
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
