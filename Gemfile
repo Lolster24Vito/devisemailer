@@ -15,7 +15,6 @@ gem "sprockets-rails"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
-gem 'webpacker', '~> 0.1'
 gem 'popper_js', '~> 2.9.3'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
@@ -32,6 +31,8 @@ gem 'jquery-ui-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+
+gem 'mail', '~> 2.7', '>= 2.7.1'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
@@ -58,7 +59,13 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
-gem 'sassc-rails', '>= 2.1.0'
+gem 'rails-dom-testing', '~> 2.0', '>= 2.0.3'
+gem 'tilt', '~> 2.0', '>= 2.0.10'
+
+
+
+gem 'sassc', '~> 2.4'
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 gem 'font-awesome-sass', '~> 6.1.1'
@@ -74,16 +81,18 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem "sqlite3", "~> 1.4"
+  gem "spring"
+
+  gem "sqlite3"
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-   gem "spring"
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'xpath', '~> 3.2'
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
