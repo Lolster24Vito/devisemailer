@@ -15,7 +15,10 @@
 
    </header>
        <div class='container'>
-       
+       <%= "Environment: #{Rails.env.test?}" %>
+       <%= "Environment: #{Rails.env.production?}" %>
+       <%= "Environment: #{Rails.env.development?}" %>
+
            
         <%= yield %>
            
