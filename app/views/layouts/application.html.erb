@@ -7,18 +7,21 @@
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <%= csrf_meta_tags %>
     <%= javascript_importmap_tags %>
-   </head>
+
+
+  </head>
    <body>
    <header>
    <%= render 'layouts/nav' %>
    <%= bootstrap_flash %>
-
+   <%= user_signed_in? %>
    </header>
        <div class='container'>
+       <!--
        <%= "Environment: #{Rails.env.test?}" %>
        <%= "Environment: #{Rails.env.production?}" %>
        <%= "Environment: #{Rails.env.development?}" %>
-
+         -->
            
         <%= yield %>
            
@@ -27,5 +30,6 @@
           <%= render 'layouts/foot' %>
 
    </body>
+
 </html>
 
