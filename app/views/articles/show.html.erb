@@ -1,5 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
+
+<p>
+<strong>Created by:</strong>
+<%= @article.user.username %>
+</p>
+
 <%= render @article %>
 
 <div>
