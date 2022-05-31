@@ -8,7 +8,7 @@ RSpec.describe UsersController, type: :controller do
                  email: "test@gmail.com",
                  created_at:DateTime.now , updated_at: DateTime.now )
        
-            expect(user.last.username).to eq("testuser")
+            expect(user.last.username).to eq("testuser") 
         end
     end
 end
