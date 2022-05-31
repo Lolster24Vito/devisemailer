@@ -1,11 +1,11 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[ show edit update destroy ]
-  before_action :authenticate_user! , except: [:index , :show ]
+  before_action :authenticate_user!
 
   # GET /articles or /articles.json
   def index
     @articles = Article.paginate(page: params[:page], per_page: 5)
-    @Last4articles = Article.last(4);
+    @last_four_articles = Article.last(4);
   end
 
   # GET /articles/1 or /articles/1.json
