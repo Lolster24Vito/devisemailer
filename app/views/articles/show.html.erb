@@ -6,7 +6,19 @@
 <%= @article.user.username %>
 </p>
 
-<%= render @article %>
+<p>
+<strong>Title:</strong>
+<%= @article.title %>
+</p>
+
+<p>
+<strong>Body:</strong>
+<%= @article.body %>
+</p>
+
+
+
+<%= render 'comments/form'%>
 
 <div>
   <%= link_to "Edit this article", edit_article_path(@article) %> |
