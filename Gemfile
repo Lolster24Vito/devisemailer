@@ -72,7 +72,8 @@ gem 'font-awesome-sass', '~> 6.1.1'
 gem 'bootstrap-sass-extras', '~> 0.0.2'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'simple_form', '~> 4.0.1'
-
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.2'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

@@ -1,5 +1,5 @@
 
-       <nav class="navbar navbar-default"> 
+       <nav class="navbar navbar-default" > 
          <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -24,6 +24,8 @@
                   <li><%= link_to "Contact us",pages_contact_path %> </li>
                   <li><%= link_to "About us",pages_about_path %> </li>
                   <li><%= link_to "Create an article",new_article_path %> </li>
+                  <li><%= link_to "View articles",articles_path %> </li>
+
 
                <%if(!user_signed_in?) %>
                   <li><%= link_to "Sign up",new_user_registration_path %> </li>
