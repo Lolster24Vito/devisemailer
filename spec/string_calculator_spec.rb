@@ -1,4 +1,7 @@
 # spec/string_calculator_spec.rb
+#require 'rails_helper'
+require 'spec_helper'
+#require 'bundler/setup'
 describe StringCalculator do
 
     describe ".add" do
