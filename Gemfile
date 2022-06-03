@@ -38,6 +38,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 
 
+
 #Uncommenting this will break the application vito
 #@import "bootstrap-sprockets";
 #@import "bootstrap";
@@ -55,13 +56,16 @@ gem "redis", "~> 4.0"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
+ #Original: gem "bootsnap", require: false
 gem "bootsnap", require: false
+#gem "bootsnap", github: "Shopify/bootsnap"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
 gem 'rails-dom-testing', '~> 2.0', '>= 2.0.3'
 gem 'tilt', '~> 2.0', '>= 2.0.10'
 
+gem 'rexml', '~> 3.2', '>= 3.2.4'
 
 
 gem 'sassc', '~> 2.4'
@@ -75,9 +79,16 @@ gem 'simple_form', '~> 4.0.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.2'
 
+# Gemfile
+source "https://rubygems.org"
+
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "rspec"
+  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
+  gem "factory_bot_rails"
 end
 
 
