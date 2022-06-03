@@ -2,7 +2,7 @@
 #require 'rails_helper'
 require 'spec_helper'
 #require 'bundler/setup'
-describe StringCalculator do
+RSpec.describe :StringCalculator  do
 
     describe ".add" do
       context "given an empty string" do

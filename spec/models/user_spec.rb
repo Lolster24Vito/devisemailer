@@ -1,9 +1,11 @@
 require 'rails_helper'
-require 'bundler/setup'
 
 RSpec.describe User, type: :model do
-  it 'returns test' do
-    t=
-    expect(User.TestMethod()).to eq 'test'
+  describe 'creation' do
+    it 'can be created' do
+      user = User.TestMethod
+      
+      expect(user).to  eq("test")
+    end
   end
 end

@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/Shopify/bootsnap.git
-  revision: b7455a34145fab74ee79a3cf576e345640bca7af
-  specs:
-    bootsnap (1.12.0)
-      msgpack (~> 1.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -79,6 +72,8 @@ GEM
       execjs (~> 2)
     bcrypt (3.1.18)
     bindex (0.8.1)
+    bootsnap (1.12.0)
+      msgpack (~> 1.2)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
@@ -300,7 +295,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bootsnap!
+  bootsnap
   bootstrap-sass (~> 3.3, >= 3.3.6)
   bootstrap-sass-extras (~> 0.0.2)
   capybara
